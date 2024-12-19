@@ -1,6 +1,6 @@
 {
   "name": "node-stdlib-browser-next",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Node standard library for browser.",
   "license": "MIT",
   "author": "Ivan Nikolić <niksy5@gmail.com> (http://ivannikolic.com)",

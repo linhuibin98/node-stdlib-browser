@@ -20,92 +20,91 @@ const resolvePath = (path) => {
 	return resolvedPath;
 };
 
-const assert = resolvePath('assert/');
-const buffer = resolvePath('buffer/');
+const assert = require.resolve('assert/');
+const buffer = require.resolve('buffer/');
 const child_process = resolvePath('./mock/child_process.js');
 const cluster = resolvePath('./mock/empty.js');
-const _console = resolvePath('console-browserify');
-const constants = resolvePath('constants-browserify');
-const crypto = resolvePath('crypto-browserify');
+const _console = require.resolve('console-browserify');
+const constants = require.resolve('constants-browserify');
+const crypto = require.resolve('crypto-browserify');
 const dgram = resolvePath('./mock/empty.js');
 const dns = resolvePath('./mock/empty.js');
-const domain = resolvePath('domain-browser');
-const events = resolvePath('events/');
+const domain = require.resolve('domain-browser');
+const events = require.resolve('events/');
 const fs = resolvePath('./mock/empty-null.js');
-const http = resolvePath('stream-http');
-const https = resolvePath('https-browserify');
+const http = require.resolve('stream-http');
+const https = require.resolve('https-browserify');
 const http2 = resolvePath('./mock/empty.js');
 const _module = resolvePath('./mock/module.js');
 const net = resolvePath('./mock/empty.js');
-const os = resolvePath('os-browserify/browser.js');
-const path = resolvePath('path-browserify');
-const punycode = resolvePath('punycode/');
-const _process = resolvePath('./proxy/process').replace('.js', '');
+const os = require.resolve('os-browserify/browser.js');
+const path = require.resolve('path-browserify');
+const punycode = require.resolve('punycode/');
+const _process = resolvePath('./proxy/process');
 const querystring = resolvePath('./proxy/querystring.js');
 const readline = resolvePath('./mock/empty.js');
 const repl = resolvePath('./mock/empty.js');
-const stream = resolvePath('stream-browserify');
-const _stream_duplex = resolvePath('readable-stream/lib/_stream_duplex.js');
-const _stream_passthrough = resolvePath(
-	'readable-stream/lib/_stream_passthrough.js'
-);
-const _stream_readable = resolvePath('readable-stream/lib/_stream_readable.js');
-const _stream_transform = resolvePath(
-	'readable-stream/lib/_stream_transform.js'
-);
-const _stream_writable = resolvePath('readable-stream/lib/_stream_writable.js');
-const string_decoder = resolvePath('string_decoder/');
-const sys = resolvePath('util/util.js');
-const timers = resolvePath('timers-browserify');
-const timersPromises = resolvePath('isomorphic-timers-promises');
+const stream = require.resolve('stream-browserify');
+const _stream_duplex = require.resolve('readable-stream/lib/_stream_duplex.js');
+const _stream_passthrough = require.resolve('readable-stream/lib/_stream_passthrough.js');
+const _stream_readable = require.resolve('readable-stream/lib/_stream_readable.js');
+const _stream_transform = require.resolve('readable-stream/lib/_stream_transform.js');
+const _stream_writable = require.resolve('readable-stream/lib/_stream_writable.js');
+const string_decoder = require.resolve('string_decoder/');
+const sys = require.resolve('util/util.js');
+const timers = require.resolve('timers-browserify');
+const timersPromises = require.resolve('isomorphic-timers-promises');
 const tls = resolvePath('./mock/empty.js');
-const tty = resolvePath('tty-browserify');
+const tty = require.resolve('tty-browserify');
 const url = resolvePath('./proxy/url.js');
-const util = resolvePath('util/util.js');
-const vm = resolvePath('vm-browserify');
-const zlib = resolvePath('browserify-zlib');
+const util = require.resolve('util/util.js');
+const vm = require.resolve('vm-browserify');
+const zlib = require.resolve('browserify-zlib');
+const v8 = resolvePath('./mock/empty.js');
 
 const packages = {
-	assert,
-	buffer,
-	child_process,
-	cluster,
-	console: _console,
-	constants,
-	crypto,
-	dgram,
-	dns,
-	domain,
-	events,
-	fs,
-	http,
-	https,
-	http2,
-	module: _module,
-	net,
-	os,
-	path,
-	punycode,
-	process: _process,
-	querystring,
-	readline,
-	repl,
-	stream,
-	_stream_duplex,
-	_stream_passthrough,
-	_stream_readable,
-	_stream_transform,
-	_stream_writable,
-	string_decoder,
-	sys,
-	'timers/promises': timersPromises,
-	timers,
-	tls,
-	tty,
-	url,
-	util,
-	vm,
-	zlib
+  assert,
+  buffer,
+  child_process,
+  cluster,
+  console: _console,
+  constants,
+  crypto,
+  dgram,
+  dns,
+  domain,
+  events,
+  'fs/promises': fs,
+  fs,
+  http,
+  https,
+  http2,
+  module: _module,
+  net,
+  os,
+  path,
+  punycode,
+  process: _process,
+  querystring,
+  readline,
+  repl,
+  stream,
+  _stream_duplex,
+  _stream_passthrough,
+  _stream_readable,
+  _stream_transform,
+  _stream_writable,
+  string_decoder,
+  sys,
+  'timers/promises': timersPromises,
+  timers,
+  tls,
+  tty,
+  url,
+  util,
+  vm,
+  zlib,
+  v8
 };
 
 /** @typedef {typeof packages} Packages */
