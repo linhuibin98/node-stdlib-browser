@@ -159,6 +159,9 @@ module.exports = [
 	'mock/punycode.js',
 	'mock/tls.js',
 	'mock/tty.js',
+	'mock/empty-null.js',
+	'mock/child_process.js',
+	'mock/module.js',
 	[
 		'proxy/url.js',
 		{ cjsOutro: 'exports = module.exports = api;', cjsExports: 'named' }
