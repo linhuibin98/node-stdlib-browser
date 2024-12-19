@@ -1,6 +1,6 @@
 {
-  "name": "node-stdlib-browser",
-  "version": "1.3.0",
+  "name": "node-stdlib-browser-next",
+  "version": "1.0.0",
   "description": "Node standard library for browser.",
   "license": "MIT",
   "author": "Ivan Nikolić <niksy5@gmail.com> (http://ivannikolic.com)",
@@ -134,10 +134,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/niksy/node-stdlib-browser.git"
+    "url": "git+https://github.com/linhuibin98/node-stdlib-browser.git"
   },
   "bugs": {
-    "url": "https://github.com/niksy/node-stdlib-browser/issues"
+    "url": "https://github.com/linhuibin98/node-stdlib-browser/issues"
   },
-  "homepage": "https://github.com/niksy/node-stdlib-browser#readme"
+  "homepage": "https://github.com/linhuibin98/node-stdlib-browser#readme",
+  "packageManager": "pnpm@9.15.0"
 }

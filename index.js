@@ -22,7 +22,7 @@ const resolvePath = (path) => {
 
 const assert = resolvePath('assert/');
 const buffer = resolvePath('buffer/');
-const child_process = resolvePath('./mock/empty.js');
+const child_process = resolvePath('./mock/child_process.js');
 const cluster = resolvePath('./mock/empty.js');
 const _console = resolvePath('console-browserify');
 const constants = resolvePath('constants-browserify');
@@ -31,11 +31,11 @@ const dgram = resolvePath('./mock/empty.js');
 const dns = resolvePath('./mock/empty.js');
 const domain = resolvePath('domain-browser');
 const events = resolvePath('events/');
-const fs = resolvePath('./mock/empty.js');
+const fs = resolvePath('./mock/empty-null.js');
 const http = resolvePath('stream-http');
 const https = resolvePath('https-browserify');
 const http2 = resolvePath('./mock/empty.js');
-const _module = resolvePath('./mock/empty.js');
+const _module = resolvePath('./mock/module.js');
 const net = resolvePath('./mock/empty.js');
 const os = resolvePath('os-browserify/browser.js');
 const path = resolvePath('path-browserify');
